@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Element Replacer",
+  "version": "1.0",
+  "description": "Replace specified elements on the page with a custom div.",
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["jquery.js","contentScript.js"]
+    }
+  ],
+  
+  "permissions": ["activeTab"]
+}
